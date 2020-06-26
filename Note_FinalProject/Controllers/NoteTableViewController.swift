@@ -203,7 +203,7 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
     
 
         func loadNotes(with request: NSFetchRequest<Notes> = Notes.fetchRequest(), predicate: NSPredicate? = nil) {
-        //        let request: NSFetchRequest<Note> = Note.fetchRequest()
+       
                 let folderPredicate = NSPredicate(format: "folder.name=%@", selectedFolder!.name!)
                 request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
                 if let addtionalPredicate = predicate {
@@ -267,16 +267,6 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
             saveNotes()
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
      
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
            guard identifier != "moveNoteSegue" else {
