@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="folderCell" textLabel="gxU-BE-yNn" detailTextLabel="5Dj-ya-zfX" style="IBUITableViewCellStyleValue1" id="HKs-9A-kUe">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -183,6 +183,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="giG-2j-tLV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="mWf-kl-hmv">
@@ -216,13 +217,10 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
                                 <rect key="frame" x="20" y="197" width="374" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="283" id="UWb-2l-8M2"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Description">
                                         <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="17" name="Georgia-Italic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -260,16 +258,17 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="xAt-a6-fmL" secondAttribute="leading" id="5VZ-oD-MuI"/>
+                            <constraint firstItem="xAt-a6-fmL" firstAttribute="trailing" secondItem="atp-v9-gXZ" secondAttribute="trailing" id="3bF-aM-vWw"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="bottom" secondItem="5je-ft-UGX" secondAttribute="bottom" constant="39" id="8al-vd-hjw"/>
+                            <constraint firstItem="xAt-a6-fmL" firstAttribute="leading" secondItem="cLN-q3-XKF" secondAttribute="leading" id="AV0-SY-Izx"/>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="cLN-q3-XKF" secondAttribute="leading" id="Ald-Gi-7Yc"/>
                             <constraint firstItem="cLN-q3-XKF" firstAttribute="top" secondItem="atp-v9-gXZ" secondAttribute="bottom" constant="22" id="BUg-xr-EgC"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="atp-v9-gXZ" secondAttribute="trailing" constant="20" id="ICZ-70-nPO"/>
-                            <constraint firstItem="xAt-a6-fmL" firstAttribute="top" secondItem="Afx-cm-mAd" secondAttribute="top" constant="197" id="JPL-xI-FAy"/>
+                            <constraint firstItem="xAt-a6-fmL" firstAttribute="leading" secondItem="5je-ft-UGX" secondAttribute="leading" id="IXm-PL-rES"/>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="top" secondItem="gcq-aB-mbg" secondAttribute="top" constant="23" id="N54-w3-ddB"/>
                             <constraint firstItem="5je-ft-UGX" firstAttribute="trailing" secondItem="Afx-cm-mAd" secondAttribute="trailingMargin" id="Qph-W2-ife"/>
-                            <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="xAt-a6-fmL" secondAttribute="trailing" constant="20" id="Ugj-8B-YP1"/>
-                            <constraint firstItem="xAt-a6-fmL" firstAttribute="leading" secondItem="gcq-aB-mbg" secondAttribute="leading" constant="20" id="gVi-3k-qWQ"/>
+                            <constraint firstItem="5je-ft-UGX" firstAttribute="top" secondItem="xAt-a6-fmL" secondAttribute="bottom" constant="46" id="T2a-CA-JTx"/>
+                            <constraint firstItem="xAt-a6-fmL" firstAttribute="top" secondItem="cLN-q3-XKF" secondAttribute="bottom" constant="8.5" id="ikk-CA-L8h"/>
                             <constraint firstItem="5je-ft-UGX" firstAttribute="leading" secondItem="Afx-cm-mAd" secondAttribute="leadingMargin" id="jTV-tQ-LkP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gcq-aB-mbg"/>
