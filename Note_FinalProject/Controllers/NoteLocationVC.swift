@@ -31,14 +31,14 @@ class NoteLocationVC: UIViewController,CLLocationManagerDelegate,MKMapViewDelega
      
         let noteLocation = CLLocation(latitude: lat!, longitude: long!)
           super.viewDidLoad(); self.navigationController!.setNavigationBarHidden(false, animated: true)
-        self.title = "Source"
+        self.title = "NOTE LOCATION"
         
         let coordinateRegion = MKCoordinateRegion(center: noteLocation.coordinate, latitudinalMeters: regionRadius * 2.0, longitudinalMeters: regionRadius * 2.0)
         self.myMapView.setRegion(coordinateRegion, animated: true)
     
         let myAnnotation: MKPointAnnotation = MKPointAnnotation()
         myAnnotation.coordinate = CLLocationCoordinate2DMake(noteLocation.coordinate.latitude, noteLocation.coordinate.longitude);
-        myAnnotation.title = "Source"
+        myAnnotation.title = "NOTE LOCATION"
         myAnnotation.subtitle = "\(String(describing: lat)),\(String(describing: long))"
         self.myMapView.addAnnotation(myAnnotation)
      
