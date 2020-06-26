@@ -360,7 +360,7 @@
                                     <action selector="play_recording:" destination="8A9-E4-XPQ" eventType="touchUpInside" id="U8w-RK-3Aa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-Xh-9Ha">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mick" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-Xh-9Ha">
                                 <rect key="frame" x="45" y="543" width="313" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -508,6 +508,7 @@
         <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <image name="mic.circle" catalog="system" width="128" height="121"/>
         <image name="mic.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="mick" width="966" height="966"/>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
