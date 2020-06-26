@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="folderCell" textLabel="gxU-BE-yNn" detailTextLabel="5Dj-ya-zfX" style="IBUITableViewCellStyleValue1" id="HKs-9A-kUe">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -55,7 +55,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Notes" id="Y9h-jX-I1v">
                         <barButtonItem key="rightBarButtonItem" image="folder" catalog="system" id="X7v-Bv-h0W">
-                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addFolder:" destination="Vaf-tO-FVV" id="Vko-dd-sUW"/>
                             </connections>
@@ -76,6 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="lkC-Cz-uW9">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -132,7 +133,9 @@
                                 <action selector="editModePressed:" destination="4Pw-Qn-KOr" id="YDc-ng-cYc"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Y7C-lT-ALg"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Y7C-lT-ALg">
+                            <color key="tintColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
                         <barButtonItem enabled="NO" title="Item" image="tray.and.arrow.down" catalog="system" id="dFx-FW-Jsk">
                             <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -150,13 +153,13 @@
                     <navigationItem key="navigationItem" title="Notes" id="OHg-Bc-x9o">
                         <rightBarButtonItems>
                             <barButtonItem image="plus" catalog="system" id="SQc-7R-1hC">
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="uGb-zx-MFN" kind="show" identifier="addNote" id="ffk-L6-ajz"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Sort" id="WCM-a2-kH0">
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="btnSort:" destination="4Pw-Qn-KOr" id="cjl-rf-CfQ"/>
                                 </connections>
@@ -183,12 +186,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="giG-2j-tLV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.57992632772020725" green="0.3957235850484267" blue="0.14211432188922241" alpha="0.752778389084507" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="mWf-kl-hmv">
                         <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
                     </toolbar>
                     <connections>
                         <segue destination="Vaf-tO-FVV" kind="relationship" relationship="rootViewController" id="KY2-Xg-0DR"/>
@@ -253,7 +257,7 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,7 +285,9 @@
                                 <segue destination="8A9-E4-XPQ" kind="show" id="7g9-3e-mNq"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9zu-xN-Thu"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9zu-xN-Thu">
+                            <color key="tintColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
                         <barButtonItem title="image" image="person.crop.square" catalog="system" width="117.5" id="EvU-xi-onA">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
@@ -291,13 +297,13 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Notes" id="98I-bA-zAw">
                         <barButtonItem key="leftBarButtonItem" title="Location" image="location.circle.fill" catalog="system" id="MPb-LY-JLF">
-                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="GxI-li-XLn" kind="show" identifier="noteLocSegue" id="L7F-on-bee"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="pwa-XJ-gEt">
-                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="btnSave:" destination="uGb-zx-MFN" id="5VO-LF-5jf"/>
                             </connections>
@@ -340,7 +346,7 @@
                                 <rect key="frame" x="142" y="209" width="118" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFJ-BS-T38">
@@ -355,7 +361,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R6t-YN-qQa"/>
                     </view>
                     <navigationItem key="navigationItem" id="b00-2Z-4c6"/>
