@@ -60,8 +60,8 @@ extension Move: UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "")
         cell.textLabel?.text = folders[indexPath.row].name
         cell.backgroundColor = .darkGray
-        cell.textLabel?.textColor = .lightGray
-        cell.tintColor = .lightText
+        cell.textLabel?.textColor = .white
+       // cell.tintColor = .lightText
         return cell
     }
     
