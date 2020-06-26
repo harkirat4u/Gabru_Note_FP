@@ -66,8 +66,8 @@ class FolderViewController: UITableViewController {
        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let cell = tableView.dequeueReusableCell(withIdentifier: "folderCell", for: indexPath)
            cell.textLabel?.text = folders[indexPath.row].name
-           cell.textLabel?.textColor = .lightGray
-           cell.detailTextLabel?.textColor = .lightGray
+           cell.textLabel?.textColor = .black
+           cell.detailTextLabel?.textColor = .black
            cell.detailTextLabel?.text = "\(folders[indexPath.row].notesss?.count ?? 0)"
            cell.imageView?.image = UIImage(systemName: "folder")
            cell.selectionStyle = .none
