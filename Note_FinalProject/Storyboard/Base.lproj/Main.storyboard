@@ -106,7 +106,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.49489961139896377" green="0.49489961139896377" blue="0.49489961139896377" alpha="0.56049185739436624" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="jDz-1y-gTm" secondAttribute="trailing" constant="11" id="9yC-x4-E2b"/>
                                         <constraint firstItem="jDz-1y-gTm" firstAttribute="top" secondItem="kdw-6U-Uez" secondAttribute="topMargin" constant="2" id="GcC-zM-Nri"/>
@@ -205,7 +205,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
                                 <rect key="frame" x="20" y="111" width="374" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ddh-OC-QxX"/>
@@ -213,7 +213,7 @@
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
                                 <rect key="frame" x="20" y="197" width="374" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -244,7 +244,7 @@
                                     <constraint firstAttribute="height" constant="248" id="tnC-rw-89t"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
                                 <rect key="frame" x="20" y="168" width="133" height="20.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Note Description ">
@@ -258,7 +258,7 @@
                                 <color key="shadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="xAt-a6-fmL" secondAttribute="leading" id="5VZ-oD-MuI"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="bottom" secondItem="5je-ft-UGX" secondAttribute="bottom" constant="39" id="8al-vd-hjw"/>
@@ -269,7 +269,7 @@
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="top" secondItem="gcq-aB-mbg" secondAttribute="top" constant="23" id="N54-w3-ddB"/>
                             <constraint firstItem="5je-ft-UGX" firstAttribute="trailing" secondItem="Afx-cm-mAd" secondAttribute="trailingMargin" id="Qph-W2-ife"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="xAt-a6-fmL" secondAttribute="trailing" constant="20" id="Ugj-8B-YP1"/>
-                            <constraint firstItem="xAt-a6-fmL" firstAttribute="leading" secondItem="gcq-aB-mbg" secondAttribute="leading" constant="40" id="gVi-3k-qWQ"/>
+                            <constraint firstItem="xAt-a6-fmL" firstAttribute="leading" secondItem="gcq-aB-mbg" secondAttribute="leading" constant="20" id="gVi-3k-qWQ"/>
                             <constraint firstItem="5je-ft-UGX" firstAttribute="leading" secondItem="Afx-cm-mAd" secondAttribute="leadingMargin" id="jTV-tQ-LkP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gcq-aB-mbg"/>
