@@ -74,14 +74,14 @@ class FolderViewController: UITableViewController {
            return cell
        }
 
-       //MARK: - add folder method
+       //Code For add folder method
        @IBAction func addFolder(_ sender: UIBarButtonItem) {
            
            var textField = UITextField()
            let alert = UIAlertController(title: "Add New Folder", message: "", preferredStyle: .alert)
            let addAction = UIAlertAction(title: "Add", style: .default) { (action) in
                let folderNames = self.folders.map {$0.name}
-               guard !folderNames.contains(textField.text) else {self.showAlert(); return}
+            guard !folderNames.contains(textField.text) else {self.showAlert(); return}
                let newFolder = Folder(context: self.context)
                newFolder.name = textField.text!
                self.folders.append(newFolder)
@@ -101,13 +101,13 @@ class FolderViewController: UITableViewController {
            present(alert, animated: true, completion: nil)
        }
        
-       func showAlert() {
-           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
-           let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-           okAction.setValue(UIColor.orange, forKey: "titleTextColor")
-           alert.addAction(okAction)
-           present(alert, animated: true, completion: nil)
-       }
+//       func showAlert() {
+//           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
+//           let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//           okAction.setValue(UIColor.orange, forKey: "titleTextColor")
+//           alert.addAction(okAction)
+//           present(alert, animated: true, completion: nil)
+//       }
        
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            let destination = segue.destination as! NoteTableViewController
