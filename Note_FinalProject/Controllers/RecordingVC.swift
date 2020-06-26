@@ -27,7 +27,7 @@ class RecordingVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDeleg
         super.viewDidLoad()
          check_record_permission()
         }
-
+//permissions 
         func check_record_permission()
         {
             switch AVAudioSession.sharedInstance().recordPermission {
@@ -60,7 +60,7 @@ class RecordingVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDeleg
 
     func getFileUrl() -> URL
     {
-        let filename = "noteRecording.m4a"
+        let filename = "Recording.m4a"
         let filePath = getDocumentsDirectory().appendingPathComponent(filename)
     return filePath
     }
