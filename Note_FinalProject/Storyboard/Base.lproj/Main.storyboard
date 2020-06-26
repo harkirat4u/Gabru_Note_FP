@@ -194,19 +194,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Note Description " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
-                                <rect key="frame" x="40" y="154" width="178" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
                                 <rect key="frame" x="40" y="110" width="301" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ddh-OC-QxX"/>
                                 </constraints>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
@@ -240,13 +233,24 @@
                                     <constraint firstAttribute="height" constant="248" id="tnC-rw-89t"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
+                                <rect key="frame" x="40" y="168" width="180" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter Note Description ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Georgia-Italic"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="xAt-a6-fmL" secondAttribute="leading" id="5VZ-oD-MuI"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="bottom" secondItem="5je-ft-UGX" secondAttribute="bottom" id="8al-vd-hjw"/>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="cLN-q3-XKF" secondAttribute="leading" id="Ald-Gi-7Yc"/>
-                            <constraint firstItem="cLN-q3-XKF" firstAttribute="top" secondItem="atp-v9-gXZ" secondAttribute="bottom" constant="9" id="BUg-xr-EgC"/>
+                            <constraint firstItem="cLN-q3-XKF" firstAttribute="top" secondItem="atp-v9-gXZ" secondAttribute="bottom" constant="23" id="BUg-xr-EgC"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="atp-v9-gXZ" secondAttribute="trailing" constant="73" id="ICZ-70-nPO"/>
                             <constraint firstItem="xAt-a6-fmL" firstAttribute="top" secondItem="Afx-cm-mAd" secondAttribute="top" constant="197" id="JPL-xI-FAy"/>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="top" secondItem="gcq-aB-mbg" secondAttribute="top" constant="22" id="N54-w3-ddB"/>
