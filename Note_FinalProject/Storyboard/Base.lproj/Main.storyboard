@@ -15,6 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="folderCell" textLabel="gxU-BE-yNn" detailTextLabel="5Dj-ya-zfX" style="IBUITableViewCellStyleValue1" id="HKs-9A-kUe">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -52,6 +53,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Notes" id="Y9h-jX-I1v">
                         <barButtonItem key="rightBarButtonItem" image="folder" catalog="system" id="X7v-Bv-h0W">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <action selector="addFolder:" destination="Vaf-tO-FVV" id="Vko-dd-sUW"/>
                             </connections>
@@ -102,6 +104,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.49489961139896377" green="0.49489961139896377" blue="0.49489961139896377" alpha="0.56049185739436624" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="jDz-1y-gTm" secondAttribute="trailing" constant="11" id="9yC-x4-E2b"/>
                                         <constraint firstItem="jDz-1y-gTm" firstAttribute="top" secondItem="kdw-6U-Uez" secondAttribute="topMargin" constant="2" id="GcC-zM-Nri"/>
@@ -142,11 +145,13 @@
                     <navigationItem key="navigationItem" title="Notes" id="OHg-Bc-x9o">
                         <rightBarButtonItems>
                             <barButtonItem image="plus" catalog="system" id="SQc-7R-1hC">
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <segue destination="uGb-zx-MFN" kind="show" identifier="addNote" id="ffk-L6-ajz"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Sort" id="WCM-a2-kH0">
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="btnSort:" destination="4Pw-Qn-KOr" id="cjl-rf-CfQ"/>
                                 </connections>
