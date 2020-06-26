@@ -87,7 +87,7 @@ class FolderViewController: UITableViewController {
            }
            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
            // change the font color of cancel action
-           cancelAction.setValue(UIColor.red, forKey: "titleTextColor")
+           cancelAction.setValue(UIColor.orange, forKey: "titleTextColor")
            
            alert.addAction(addAction)
            alert.addAction(cancelAction)
@@ -102,7 +102,7 @@ class FolderViewController: UITableViewController {
       func showAlert() {
           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
           let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-          okAction.setValue(UIColor.red, forKey: "titleTextColor")
+          okAction.setValue(UIColor.orange, forKey: "titleTextColor")
           alert.addAction(okAction)
           present(alert, animated: true, completion: nil)
       }
