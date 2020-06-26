@@ -158,10 +158,7 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
-    {
     
-    }
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
