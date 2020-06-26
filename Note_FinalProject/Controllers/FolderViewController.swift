@@ -101,6 +101,7 @@ class FolderViewController: UITableViewController {
        
       func showAlert() {
           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
+           alert.backgroundColor = .darkGray
           let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
           okAction.setValue(UIColor.orange, forKey: "titleTextColor")
           alert.addAction(okAction)
