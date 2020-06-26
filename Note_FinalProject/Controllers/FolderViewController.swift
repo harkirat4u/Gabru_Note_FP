@@ -17,9 +17,7 @@ class FolderViewController: UITableViewController {
 
        override func viewDidLoad() {
            super.viewDidLoad()
-           
            print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-           
            loadFolder()
        }
        
@@ -89,7 +87,7 @@ class FolderViewController: UITableViewController {
            }
            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
            // change the font color of cancel action
-           cancelAction.setValue(UIColor.orange, forKey: "titleTextColor")
+           cancelAction.setValue(UIColor.red, forKey: "titleTextColor")
            
            alert.addAction(addAction)
            alert.addAction(cancelAction)
