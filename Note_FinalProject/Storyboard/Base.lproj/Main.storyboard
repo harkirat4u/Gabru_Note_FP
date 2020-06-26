@@ -39,7 +39,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="4Pw-Qn-KOr" kind="show" id="tZ1-CV-eyF"/>
                                 </connections>
@@ -104,7 +106,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.49489961139896377" green="0.49489961139896377" blue="0.49489961139896377" alpha="0.56049185739436624" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="jDz-1y-gTm" secondAttribute="trailing" constant="11" id="9yC-x4-E2b"/>
                                         <constraint firstItem="jDz-1y-gTm" firstAttribute="top" secondItem="kdw-6U-Uez" secondAttribute="topMargin" constant="2" id="GcC-zM-Nri"/>
@@ -125,18 +127,21 @@
                     </tableView>
                     <toolbarItems>
                         <barButtonItem title="item" image="ellipsis" catalog="system" id="ose-5r-CJs">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <action selector="editModePressed:" destination="4Pw-Qn-KOr" id="YDc-ng-cYc"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Y7C-lT-ALg"/>
                         <barButtonItem enabled="NO" title="Item" image="tray.and.arrow.down" catalog="system" id="dFx-FW-Jsk">
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="QvU-xk-6cK" kind="presentation" identifier="moveNoteSegue" id="gan-4X-oV2"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Qs7-uJ-U5I"/>
                         <barButtonItem enabled="NO" title="Item" image="trash" catalog="system" id="Pgr-2U-jpN">
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="deleteNotes:" destination="4Pw-Qn-KOr" id="nPQ-AL-Ahc"/>
                             </connections>
