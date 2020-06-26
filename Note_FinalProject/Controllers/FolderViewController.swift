@@ -98,16 +98,16 @@ class FolderViewController: UITableViewController {
            
            present(alert, animated: true, completion: nil)
        }
-       
+       // Alert Box
       func showAlert() {
           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
-           alert.backgroundColor = .darkGray
+          
           let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
           okAction.setValue(UIColor.orange, forKey: "titleTextColor")
           alert.addAction(okAction)
           present(alert, animated: true, completion: nil)
       }
-       
+       //Performing segue
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            let destination = segue.destination as! NoteTableViewController
            if let indexPath = tableView.indexPathForSelectedRow {
