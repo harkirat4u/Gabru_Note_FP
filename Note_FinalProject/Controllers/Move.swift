@@ -32,7 +32,7 @@ class Move: UIViewController {
     func loadFolders() {
         let request: NSFetchRequest<Folder> = Folder.fetchRequest()
         
-        // predicate if you want
+        // Predicate  if you want
         let folderPredicate = NSPredicate(format: "NOT name MATCHES %@", selectedNotes?[0].folder?.name ?? "")
         request.predicate = folderPredicate
         
@@ -44,8 +44,6 @@ class Move: UIViewController {
         }
     }
 
-    //MARK: - Action methods
-    
 
     @IBAction func dismissVC(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
