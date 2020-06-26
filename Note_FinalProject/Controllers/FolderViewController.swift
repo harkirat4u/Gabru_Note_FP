@@ -102,7 +102,7 @@ class FolderViewController: UITableViewController {
       func showAlert() {
           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
           let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-          okAction.setValue(UIColor.orange, forKey: "titleTextColor")
+          okAction.setValue(UIColor.red, forKey: "titleTextColor")
           alert.addAction(okAction)
           present(alert, animated: true, completion: nil)
       }
