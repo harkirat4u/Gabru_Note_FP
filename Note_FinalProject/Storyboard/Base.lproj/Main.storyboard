@@ -71,6 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="lkC-Cz-uW9">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -194,29 +195,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
-                                <rect key="frame" x="40" y="168" width="133" height="20.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Note Description ">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Georgia-Italic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
-                                <rect key="frame" x="40" y="110" width="301" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
+                                <rect key="frame" x="20" y="111" width="374" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ddh-OC-QxX"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
-                                <rect key="frame" x="40" y="197" width="354" height="283"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
+                                <rect key="frame" x="20" y="197" width="374" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="283" id="UWb-2l-8M2"/>
@@ -246,16 +234,29 @@
                                     <constraint firstAttribute="height" constant="248" id="tnC-rw-89t"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
+                                <rect key="frame" x="20" y="168" width="133" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Note Description ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Georgia-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="xAt-a6-fmL" secondAttribute="leading" id="5VZ-oD-MuI"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="bottom" secondItem="5je-ft-UGX" secondAttribute="bottom" constant="39" id="8al-vd-hjw"/>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="cLN-q3-XKF" secondAttribute="leading" id="Ald-Gi-7Yc"/>
-                            <constraint firstItem="cLN-q3-XKF" firstAttribute="top" secondItem="atp-v9-gXZ" secondAttribute="bottom" constant="23" id="BUg-xr-EgC"/>
-                            <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="atp-v9-gXZ" secondAttribute="trailing" constant="73" id="ICZ-70-nPO"/>
+                            <constraint firstItem="cLN-q3-XKF" firstAttribute="top" secondItem="atp-v9-gXZ" secondAttribute="bottom" constant="22" id="BUg-xr-EgC"/>
+                            <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="atp-v9-gXZ" secondAttribute="trailing" constant="20" id="ICZ-70-nPO"/>
                             <constraint firstItem="xAt-a6-fmL" firstAttribute="top" secondItem="Afx-cm-mAd" secondAttribute="top" constant="197" id="JPL-xI-FAy"/>
-                            <constraint firstItem="atp-v9-gXZ" firstAttribute="top" secondItem="gcq-aB-mbg" secondAttribute="top" constant="22" id="N54-w3-ddB"/>
+                            <constraint firstItem="atp-v9-gXZ" firstAttribute="top" secondItem="gcq-aB-mbg" secondAttribute="top" constant="23" id="N54-w3-ddB"/>
                             <constraint firstItem="5je-ft-UGX" firstAttribute="trailing" secondItem="Afx-cm-mAd" secondAttribute="trailingMargin" id="Qph-W2-ife"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="xAt-a6-fmL" secondAttribute="trailing" constant="20" id="Ugj-8B-YP1"/>
                             <constraint firstItem="xAt-a6-fmL" firstAttribute="leading" secondItem="gcq-aB-mbg" secondAttribute="leading" constant="40" id="gVi-3k-qWQ"/>
