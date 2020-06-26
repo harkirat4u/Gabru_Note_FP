@@ -194,6 +194,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
+                                <rect key="frame" x="40" y="168" width="180" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter Note Description ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Georgia-Italic"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
                                 <rect key="frame" x="40" y="110" width="301" height="35"/>
                                 <constraints>
@@ -228,27 +240,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5je-ft-UGX">
-                                <rect key="frame" x="20" y="565" width="374" height="248"/>
+                                <rect key="frame" x="20" y="526" width="374" height="248"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="248" id="tnC-rw-89t"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
-                                <rect key="frame" x="40" y="168" width="180" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Enter Note Description ">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Georgia-Italic"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="xAt-a6-fmL" secondAttribute="leading" id="5VZ-oD-MuI"/>
-                            <constraint firstItem="gcq-aB-mbg" firstAttribute="bottom" secondItem="5je-ft-UGX" secondAttribute="bottom" id="8al-vd-hjw"/>
+                            <constraint firstItem="gcq-aB-mbg" firstAttribute="bottom" secondItem="5je-ft-UGX" secondAttribute="bottom" constant="39" id="8al-vd-hjw"/>
                             <constraint firstItem="atp-v9-gXZ" firstAttribute="leading" secondItem="cLN-q3-XKF" secondAttribute="leading" id="Ald-Gi-7Yc"/>
                             <constraint firstItem="cLN-q3-XKF" firstAttribute="top" secondItem="atp-v9-gXZ" secondAttribute="bottom" constant="23" id="BUg-xr-EgC"/>
                             <constraint firstItem="gcq-aB-mbg" firstAttribute="trailing" secondItem="atp-v9-gXZ" secondAttribute="trailing" constant="73" id="ICZ-70-nPO"/>
@@ -263,6 +264,7 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem title="record" image="mic.circle" catalog="system" width="109" id="ilr-Ya-h0i">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <action selector="audionBtn:" destination="uGb-zx-MFN" id="pWz-5Q-VCR"/>
                                 <segue destination="8A9-E4-XPQ" kind="show" id="7g9-3e-mNq"/>
@@ -270,6 +272,7 @@
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="9zu-xN-Thu"/>
                         <barButtonItem title="image" image="person.crop.square" catalog="system" width="117.5" id="EvU-xi-onA">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <action selector="addPhoto:" destination="uGb-zx-MFN" id="uES-cb-5RX"/>
                             </connections>
@@ -277,11 +280,13 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Notes" id="98I-bA-zAw">
                         <barButtonItem key="leftBarButtonItem" title="Location" image="location.circle.fill" catalog="system" id="MPb-LY-JLF">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <segue destination="GxI-li-XLn" kind="show" identifier="noteLocSegue" id="L7F-on-bee"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="pwa-XJ-gEt">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="btnSave:" destination="uGb-zx-MFN" id="5VO-LF-5jf"/>
                             </connections>
