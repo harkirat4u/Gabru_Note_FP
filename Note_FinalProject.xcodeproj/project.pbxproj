@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18110B5724A5775F00188346 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18110B5624A5775F00188346 /* Move.swift */; };
+		280301E524A6051A0081C8F9 /* folder-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 280301E424A6051A0081C8F9 /* folder-icon.png */; };
 		CE89BE4F249F0DA100FC557D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BE4E249F0DA100FC557D /* AppDelegate.swift */; };
 		CE89BE51249F0DA100FC557D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BE50249F0DA100FC557D /* SceneDelegate.swift */; };
 		CE89BE53249F0DA100FC557D /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BE52249F0DA100FC557D /* FolderViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		18110B5624A5775F00188346 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		280301E424A6051A0081C8F9 /* folder-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder-icon.png"; sourceTree = "<group>"; };
 		CE89BE4B249F0DA100FC557D /* Note_FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note_FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE89BE4E249F0DA100FC557D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE89BE50249F0DA100FC557D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				CE89BE4D249F0DA100FC557D /* Note_FinalProject */,
 				CE89BE4C249F0DA100FC557D /* Products */,
+				280301E424A6051A0081C8F9 /* folder-icon.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280301E524A6051A0081C8F9 /* folder-icon.png in Resources */,
 				CE89BE5E249F0DA600FC557D /* LaunchScreen.storyboard in Resources */,
 				CE89BE5B249F0DA600FC557D /* Assets.xcassets in Resources */,
 				CE89BE56249F0DA100FC557D /* Main.storyboard in Resources */,
