@@ -137,9 +137,7 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
     
     @IBAction func btnSave(_ sender: Any) {
         determineMyCurrentLocation()
-        if (txtDesc.text!.isEmpty) {
-            return
-        }
+     
         
         
         if (userIsEditing == true) {
