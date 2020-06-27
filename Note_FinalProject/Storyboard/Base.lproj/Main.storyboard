@@ -15,7 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="separatorColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="folderCell" textLabel="gxU-BE-yNn" detailTextLabel="5Dj-ya-zfX" style="IBUITableViewCellStyleValue1" id="HKs-9A-kUe">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -52,7 +51,19 @@
                             <outlet property="delegate" destination="Vaf-tO-FVV" id="Zvq-x8-EHq"/>
                         </connections>
                     </tableView>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" image="trash" catalog="system" id="wjS-OA-W4J">
+                            <connections>
+                                <action selector="deleteAction:" destination="Vaf-tO-FVV" id="QsG-ro-p1U"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PPY-fN-FhZ"/>
+                        <barButtonItem title="Item" image="scissors.badge.ellipsis" catalog="system" id="Lcl-mK-JlY">
+                            <connections>
+                                <action selector="editActionBtn:" destination="Vaf-tO-FVV" id="Cfs-vv-pXK"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Notes" id="Y9h-jX-I1v">
                         <barButtonItem key="rightBarButtonItem" image="folder" catalog="system" id="X7v-Bv-h0W">
                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,6 +73,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="deleteBtn" destination="wjS-OA-W4J" id="3WE-07-81i"/>
+                        <outlet property="editBtn" destination="AZ0-4o-gKa" id="EnI-bq-amB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLG-Ge-emB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,9 +297,13 @@
                                 <segue destination="8A9-E4-XPQ" kind="show" id="7g9-3e-mNq"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9zu-xN-Thu">
-                            <color key="tintColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="S1w-ud-eWc"/>
+                        <barButtonItem title="Update" id="fPW-Eg-sFG">
+                            <connections>
+                                <action selector="updateAction:" destination="uGb-zx-MFN" id="dfg-0C-YyQ"/>
+                            </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9zu-xN-Thu"/>
                         <barButtonItem title="image" image="person.crop.square" catalog="system" width="117.5" id="EvU-xi-onA">
                             <connections>
                                 <action selector="addPhoto:" destination="uGb-zx-MFN" id="uES-cb-5RX"/>
@@ -310,8 +329,10 @@
                         <outlet property="locationTF" destination="NpH-QD-lNd" id="R3J-Vr-2xm"/>
                         <outlet property="locationitem" destination="MPb-LY-JLF" id="xCr-76-3kW"/>
                         <outlet property="notesImageView" destination="5je-ft-UGX" id="Buz-u3-HxW"/>
+                        <outlet property="saveBtn" destination="pwa-XJ-gEt" id="ikz-Pu-KYa"/>
                         <outlet property="txtDesc" destination="xAt-a6-fmL" id="PLH-Mv-5FU"/>
                         <outlet property="txttitle" destination="atp-v9-gXZ" id="FBO-4l-riT"/>
+                        <outlet property="updateBtn" destination="fPW-Eg-sFG" id="ncI-sZ-iU3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRi-Zf-Fsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -508,6 +529,7 @@
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="scissors.badge.ellipsis" catalog="system" width="128" height="80"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <image name="tray.and.arrow.down" catalog="system" width="128" height="109"/>
     </resources>

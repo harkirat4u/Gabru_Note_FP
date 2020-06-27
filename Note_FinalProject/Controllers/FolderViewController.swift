@@ -12,7 +12,9 @@ class FolderViewController: UITableViewController {
      // create a folder array to populate the table
        var folders = [Folder]()
        
-       // create a context
+    @IBOutlet weak var deleteBtn: UIBarButtonItem!
+    @IBOutlet var editBtn: UITableView!
+    // create a context
        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
        override func viewDidLoad() {
@@ -61,6 +63,21 @@ class FolderViewController: UITableViewController {
        }
 
        
+    
+    @IBAction func deleteAction(_ sender: UIBarButtonItem) {
+    }
+    
+    
+    @IBAction func editActionBtn(_ sender: UIBarButtonItem) {
+    }
+    
+    
+    
+    
+    
+    
+    
+    
        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let cell = tableView.dequeueReusableCell(withIdentifier: "folderCell", for: indexPath)
            cell.textLabel?.text = folders[indexPath.row].name
