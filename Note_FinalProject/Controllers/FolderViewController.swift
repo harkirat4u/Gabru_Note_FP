@@ -151,6 +151,16 @@ class FolderViewController: UITableViewController {
           alert.addAction(okAction)
           present(alert, animated: true, completion: nil)
       }
+         
+         //Seuge Control
+         
+            override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+             if (editMode==false) {
+                 return true
+             } else {
+                 return false
+             }
+         }
        //Performing segue
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            let destination = segue.destination as! NoteTableViewController
