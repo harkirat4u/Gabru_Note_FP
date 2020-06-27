@@ -31,6 +31,8 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
     var userIsEditing = true
     var context:NSManagedObjectContext!
     override func viewDidLoad() {
+          updatebtn.isEnabled=false
+            locationitem.isEnabled=false
         super.viewDidLoad()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         context = appDelegate.persistentContainer.viewContext
