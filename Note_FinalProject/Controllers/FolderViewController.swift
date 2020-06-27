@@ -65,6 +65,15 @@ class FolderViewController: UITableViewController {
        
     
     @IBAction func deleteAction(_ sender: UIBarButtonItem) {
+         if let indexPaths = tableView.indexPathsForSelectedRows {
+             let rows = (indexPaths.map {$0.row}).sorted(by: >)
+             
+                 let _ = rows.map {deleteNote(folder: folders[$0])}
+             let _ = rows.map {folders.remove(at: $0)}
+             
+             tableView.reloadData()
+             
+             saveFolders()
     }
     
     
