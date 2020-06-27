@@ -49,7 +49,7 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
         }
         else {
             txtDesc.text = ""
-            locationitem.isEnabled = true
+           // locationitem.isEnabled = true
             
         }
     }
