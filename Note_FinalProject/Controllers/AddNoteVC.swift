@@ -38,6 +38,10 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
             locationitem.isEnabled = true
             txttitle.text = note.title!
             txtDesc.text = note.desc!
+            
+             updatebtn.isEnabled=true
+                saveBtn.isEnabled=false
+
             self.notesImageView.image = UIImage(data: note.imageData! as Data)
             locationTF.text = String(note.latitude)
         }
