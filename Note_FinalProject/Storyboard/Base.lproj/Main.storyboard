@@ -11,7 +11,7 @@
         <scene sceneID="u59-hN-cVg">
             <objects>
                 <tableViewController id="Vaf-tO-FVV" customClass="FolderViewController" customModule="Note_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AZ0-4o-gKa">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AZ0-4o-gKa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -253,7 +253,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5je-ft-UGX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5je-ft-UGX">
                                 <rect key="frame" x="20" y="526" width="374" height="248"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="248" id="tnC-rw-89t"/>
@@ -329,11 +329,10 @@
                         <outlet property="locationTF" destination="NpH-QD-lNd" id="R3J-Vr-2xm"/>
                         <outlet property="locationitem" destination="MPb-LY-JLF" id="xCr-76-3kW"/>
                         <outlet property="notesImageView" destination="5je-ft-UGX" id="Buz-u3-HxW"/>
-                        <outlet property="saveBtn" destination="pwa-XJ-gEt" id="ikz-Pu-KYa"/>
+                        <outlet property="savebtn" destination="pwa-XJ-gEt" id="LYt-jj-DLi"/>
                         <outlet property="txtDesc" destination="xAt-a6-fmL" id="PLH-Mv-5FU"/>
                         <outlet property="txttitle" destination="atp-v9-gXZ" id="FBO-4l-riT"/>
-                        <outlet property="updateAction" destination="fPW-Eg-sFG" id="Ygb-kJ-4XU"/>
-                        <outlet property="updateBtn" destination="fPW-Eg-sFG" id="uFQ-px-mdD"/>
+                        <outlet property="updateBtn" destination="fPW-Eg-sFG" id="RgJ-Y5-T8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRi-Zf-Fsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -528,6 +527,7 @@
         <image name="mic.circle.fill" catalog="system" width="128" height="121"/>
         <image name="mick" width="966" height="966"/>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="placeholder" width="1040" height="584"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="scissors.badge.ellipsis" catalog="system" width="128" height="80"/>

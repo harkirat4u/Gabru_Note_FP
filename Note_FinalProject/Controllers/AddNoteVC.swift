@@ -22,6 +22,8 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
     @IBOutlet var locationitem: UIBarButtonItem!
     @IBOutlet var notesImageView: UIImageView!
     @IBOutlet weak var locationTF: UILabel!
+    
+    @IBOutlet weak var savebtn: UIBarButtonItem!
     var latitudeString:String = ""
     var listArray = [NSManagedObject]();
     var longitudeString:String = ""
@@ -31,7 +33,7 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
     var userIsEditing = true
     var context:NSManagedObjectContext!
     override func viewDidLoad() {
-          updatebtn.isEnabled=false
+          updateBtn.isEnabled=false
             locationitem.isEnabled=false
         super.viewDidLoad()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -41,8 +43,8 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
             txttitle.text = note.title!
             txtDesc.text = note.desc!
             
-             updatebtn.isEnabled=true
-                saveBtn.isEnabled=false
+             updateBtn.isEnabled=true
+                savebtn.isEnabled=false
 
             self.notesImageView.image = UIImage(data: note.imageData! as Data)
             locationTF.text = String(note.latitude)
@@ -144,8 +146,8 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
             }
             else{
                 note.title = txttitle.text!
-                   saveBtn.isEnabled=false
-                    updatebtn.isEnabled=true
+                   savebtn.isEnabled=false
+                    updateBtn.isEnabled=true
             }
             note.desc = txtDesc.text!
             let imageData = notesImageView.image!.pngData() as NSData?

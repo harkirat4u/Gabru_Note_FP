@@ -11,13 +11,14 @@ import CoreData
 class FolderViewController: UITableViewController {
      // create a folder array to populate the table
        var folders = [Folder]()
-         var editMode: Bool = false
+        var editMode: Bool = false
     @IBOutlet weak var deleteBtn: UIBarButtonItem!
     @IBOutlet var editBtn: UITableView!
     // create a context
        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
        override func viewDidLoad() {
+         deleteBtn.isEnabled=false
            super.viewDidLoad()
            print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
            loadFolder()
@@ -75,7 +76,7 @@ class FolderViewController: UITableViewController {
              
              saveFolders()
     }
-    
+    }
     
     @IBAction func editActionBtn(_ sender: UIBarButtonItem) {
          editMode = !editMode
@@ -90,7 +91,7 @@ class FolderViewController: UITableViewController {
              if editingStyle == .delete {
 
                  deleteNote(folder: folders[indexPath.row])
-                           saveNotes()
+                           saveFolders()
                            folders.remove(at: indexPath.row)
                            // Delete the row from the data source
                            tableView.deleteRows(at: [indexPath], with: .fade)
@@ -145,13 +146,9 @@ class FolderViewController: UITableViewController {
          func deleteNote(folder: Folder) {
                context.delete(folder)
            }
-              func saveNotes() {
-                  do {
-                      try context.save()
-                  } catch {
-                      print("Error saving the context \(error.localizedDescription)")
-                  }
-         }
+        
+            
+         
          
        // Alert Box
       func showAlert() {
@@ -165,13 +162,14 @@ class FolderViewController: UITableViewController {
          
          //Seuge Control
          
-            override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-             if (editMode==false) {
-                 return true
-             } else {
-                 return false
-             }
-         }
+       override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+               if (editMode==false) {
+                   return true
+               } else {
+                   return false
+               }
+           }
+        
        //Performing segue
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            let destination = segue.destination as! NoteTableViewController
@@ -182,4 +180,5 @@ class FolderViewController: UITableViewController {
        }
 
 }
+
 
