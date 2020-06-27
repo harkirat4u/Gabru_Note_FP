@@ -472,7 +472,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61K-HW-Hi1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61K-HW-Hi1">
                                 <rect key="frame" x="346" y="81" width="48" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="32e-Gx-wje"/>
@@ -495,8 +495,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="61K-HW-Hi1" firstAttribute="trailing" secondItem="KPm-eb-Fsn" secondAttribute="trailingMargin" id="A5I-43-KQz"/>
                             <constraint firstItem="61K-HW-Hi1" firstAttribute="top" secondItem="fxQ-Jb-YUR" secondAttribute="top" constant="81" id="Bfr-Zn-3zT"/>
