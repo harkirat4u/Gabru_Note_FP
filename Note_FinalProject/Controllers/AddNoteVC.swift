@@ -94,6 +94,18 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
                             let imageData = notesImageView.image!.pngData() as NSData?
                             note.imageData = imageData as Data?
                             note.folder = self.folder
+             
+                        do {
+                            try context.save()
+                            listArray.append(note);
+                            let alertBox = UIAlertController(title: "Alert", message: "Data updated Successfully", preferredStyle: .alert)
+                            alertBox.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { action in
+                                self.navigationController?.popViewController(animated: true)
+
+                               // self.datecompare()
+                            }))
+                            self.present(alertBox, animated: true, completion: nil)
+                        }
     }
     
     
