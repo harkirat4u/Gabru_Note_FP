@@ -87,6 +87,13 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
     
     
     @IBAction func updateAction(_ sender: UIBarButtonItem) {
+        
+            determineMyCurrentLocation()
+                            note.title = txttitle.text!
+                            note.desc = txtDesc.text!
+                            let imageData = notesImageView.image!.pngData() as NSData?
+                            note.imageData = imageData as Data?
+                            note.folder = self.folder
     }
     
     
