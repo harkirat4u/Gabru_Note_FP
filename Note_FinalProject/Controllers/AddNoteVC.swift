@@ -15,7 +15,8 @@ import AVFoundation
 
 class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerControllerDelegate ,UINavigationControllerDelegate, AVAudioRecorderDelegate{
     var selectedNote: Notes?
-      weak var delegate: NoteTableViewController?
+    @IBOutlet var swipe: UISwipeGestureRecognizer!
+    weak var delegate: NoteTableViewController?
     @IBOutlet weak var updateBtn: UIBarButtonItem!
     @IBOutlet var txttitle: UITextField!
     @IBOutlet var txtDesc: UITextView!
@@ -91,6 +92,13 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
             _ = self.navigationController?.popViewController(animated: true)
         })
         present(ac, animated: true)
+    }
+    
+    
+    
+    @IBAction func swipeAction(_ sender: UISwipeGestureRecognizer) {
+        
+        view.endEditing(true)
     }
     
     
