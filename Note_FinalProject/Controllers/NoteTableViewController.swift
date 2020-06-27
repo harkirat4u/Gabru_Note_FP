@@ -46,7 +46,7 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
     
     @IBAction func btnSort(_ sender: UIBarButtonItem) {
         sortByTitle()
-        
+        tableView.reloadData()
     }
     func updateSearchResults(for searchController: UISearchController) {
         searchController.searchBar.autocapitalizationType = .none
@@ -182,18 +182,8 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
       
         loadNotes()
         for note in self.notes {
-            let unixTimestamp = note.created/1000;
-            let date = Date(timeIntervalSince1970: TimeInterval(unixTimestamp));
-            
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
-            dateFormatter.locale = NSLocale.current
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-            let strDate = dateFormatter.string(from: date)
-            
-            
-            array.append("Title \(note.title!);Desc \(String(describing: note.desc!));Created \(String(describing: strDate) )")
+           
+            array.append("Search by Title : \(note.title!)")
         }
         searchController.searchBar.autocapitalizationType = .none
         self.loadNotes()
@@ -205,7 +195,7 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
         func loadNotes(with request: NSFetchRequest<Notes> = Notes.fetchRequest(), predicate: NSPredicate? = nil) {
        
                 let folderPredicate = NSPredicate(format: "folder.name=%@", selectedFolder!.name!)
-                request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+                request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: false)]
                 if let addtionalPredicate = predicate {
                     request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [folderPredicate, addtionalPredicate])
                 } else {

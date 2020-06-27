@@ -31,7 +31,7 @@ class NoteLocationVC: UIViewController,CLLocationManagerDelegate,MKMapViewDelega
      
         let noteLocation = CLLocation(latitude: lat!, longitude: long!)
           super.viewDidLoad(); self.navigationController!.setNavigationBarHidden(false, animated: true)
-        self.title = "NOTE Saved LOCATION"
+        
         
         let coordinateRegion = MKCoordinateRegion(center: noteLocation.coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
         self.myMapView.setRegion(coordinateRegion, animated: true)

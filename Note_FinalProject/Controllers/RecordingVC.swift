@@ -100,7 +100,7 @@ class RecordingVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDeleg
         if(isRecording)
         {
             finishAudioRecording(success: true)
-            record_btn_ref.setTitle("Record", for: .normal)
+            record_btn_ref.setTitle("rec", for: .normal)
             play_btn_ref.isEnabled = true
             isRecording = false
         }

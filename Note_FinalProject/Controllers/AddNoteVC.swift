@@ -212,11 +212,6 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
     }
     
     
-
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
     func openDialog(){
         let alert = UIAlertController(title: "Note", message: "Pick image from", preferredStyle: .alert)
         
