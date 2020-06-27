@@ -11,7 +11,7 @@ import CoreData
 class FolderViewController: UITableViewController {
      // create a folder array to populate the table
        var folders = [Folder]()
-       
+         var editMode: Bool = false
     @IBOutlet weak var deleteBtn: UIBarButtonItem!
     @IBOutlet var editBtn: UITableView!
     // create a context
