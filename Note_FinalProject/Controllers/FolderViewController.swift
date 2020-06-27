@@ -89,7 +89,7 @@ class FolderViewController: UITableViewController {
            cell.detailTextLabel?.textColor = .black
            cell.detailTextLabel?.text = "\(folders[indexPath.row].notes?.count ?? 0)"
            cell.imageView?.image = UIImage(systemName: "folder")
-           cell.selectionStyle = .none
+         
            return cell
        }
 
