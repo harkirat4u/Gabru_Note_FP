@@ -106,6 +106,15 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
                             }))
                             self.present(alertBox, animated: true, completion: nil)
                         }
+           catch {
+
+                            let alertBox = UIAlertController(title: "Error", message: "Error", preferredStyle: .alert)
+                            alertBox.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                            self.present(alertBox, animated: true, completion: nil)
+                        }
+                        if (userIsEditing == false) {
+                            self.navigationController?.popViewController(animated: true)
+                        }
     }
     
     
