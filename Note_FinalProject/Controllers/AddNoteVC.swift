@@ -138,6 +138,8 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
             }
             else{
                 note.title = txttitle.text!
+                   saveBtn.isEnabled=false
+                    updatebtn.isEnabled=true
             }
             note.desc = txtDesc.text!
             let imageData = notesImageView.image!.pngData() as NSData?
