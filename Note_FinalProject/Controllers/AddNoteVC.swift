@@ -191,6 +191,11 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
             }
             
         }))
+           alert.addAction(UIAlertAction(title: "Remove", style: .default, handler: { action in
+                      
+                self.notesImageView.image = UIImage(named: "placeholder.png");
+                      
+                  }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true)
     }
