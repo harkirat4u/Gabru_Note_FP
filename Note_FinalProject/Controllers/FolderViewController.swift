@@ -85,8 +85,19 @@ class FolderViewController: UITableViewController {
     }
     
     
-    
-    
+    //Swipe Delete
+            override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+             if editingStyle == .delete {
+
+                 deleteNote(folder: folders[indexPath.row])
+                           saveNotes()
+                           folders.remove(at: indexPath.row)
+                           // Delete the row from the data source
+                           tableView.deleteRows(at: [indexPath], with: .fade)
+             } else if editingStyle == .insert {
+                 
+             }
+         }
     
     
     
