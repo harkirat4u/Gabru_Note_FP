@@ -183,16 +183,14 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Ml0-IG-UZx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="giG-2j-tLV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="giG-2j-tLV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.57992632772020725" green="0.3957235850484267" blue="0.14211432188922241" alpha="0.752778389084507" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="mWf-kl-hmv">
                         <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
                     </toolbar>
                     <connections>
                         <segue destination="Vaf-tO-FVV" kind="relationship" relationship="rootViewController" id="KY2-Xg-0DR"/>
@@ -211,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atp-v9-gXZ">
-                                <rect key="frame" x="20" y="111" width="374" height="35"/>
+                                <rect key="frame" x="20" y="163" width="374" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ddh-OC-QxX"/>
                                 </constraints>
@@ -219,7 +217,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-a6-fmL">
-                                <rect key="frame" x="20" y="197" width="374" height="283"/>
+                                <rect key="frame" x="20" y="249" width="374" height="231"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Description">
@@ -247,7 +245,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-q3-XKF">
-                                <rect key="frame" x="20" y="168" width="133" height="20.5"/>
+                                <rect key="frame" x="20" y="220" width="133" height="20.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Note Description ">
                                         <attributes>
@@ -257,7 +255,7 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,7 +277,6 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem title="record" image="mic.circle" catalog="system" width="109" id="ilr-Ya-h0i">
-                            <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="audionBtn:" destination="uGb-zx-MFN" id="pWz-5Q-VCR"/>
                                 <segue destination="8A9-E4-XPQ" kind="show" id="7g9-3e-mNq"/>
@@ -289,25 +286,24 @@
                             <color key="tintColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                         <barButtonItem title="image" image="person.crop.square" catalog="system" width="117.5" id="EvU-xi-onA">
-                            <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addPhoto:" destination="uGb-zx-MFN" id="uES-cb-5RX"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Notes" id="98I-bA-zAw">
-                        <barButtonItem key="leftBarButtonItem" title="Location" image="location.circle.fill" catalog="system" id="MPb-LY-JLF">
-                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="GxI-li-XLn" kind="show" identifier="noteLocSegue" id="L7F-on-bee"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="pwa-XJ-gEt">
-                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="btnSave:" destination="uGb-zx-MFN" id="5VO-LF-5jf"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Save" id="pwa-XJ-gEt">
+                                <connections>
+                                    <action selector="btnSave:" destination="uGb-zx-MFN" id="5VO-LF-5jf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Location" image="location.fill" catalog="system" id="MPb-LY-JLF">
+                                <connections>
+                                    <segue destination="GxI-li-XLn" kind="show" identifier="noteLocSegue" id="L7F-on-bee"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -330,11 +326,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZi-Tx-qT5">
-                                <rect key="frame" x="50" y="385" width="89" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="89" id="GvO-SV-bYx"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEE-sR-7IC">
+                                <rect key="frame" x="142" y="563" width="118" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mick" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-Xh-9Ha">
+                                <rect key="frame" x="45" y="126" width="313" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFJ-BS-T38">
+                                <rect key="frame" x="244" y="434" width="96" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title=" play" image="play.fill" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="play_recording:" destination="8A9-E4-XPQ" eventType="touchUpInside" id="U8w-RK-3Aa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZi-Tx-qT5">
+                                <rect key="frame" x="77" y="434" width="89" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="   rec." image="mic.circle.fill" catalog="system">
@@ -344,46 +360,8 @@
                                     <action selector="start_recording:" destination="8A9-E4-XPQ" eventType="touchUpInside" id="wjw-dN-7Ah"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEE-sR-7IC">
-                                <rect key="frame" x="142" y="178" width="118" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mick" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-Xh-9Ha">
-                                <rect key="frame" x="45" y="235" width="313" height="181"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="181" id="kbK-bY-OXI"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFJ-BS-T38">
-                                <rect key="frame" x="275" y="408" width="96" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="elh-AN-glr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title=" play" image="play.fill" catalog="system">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="play_recording:" destination="8A9-E4-XPQ" eventType="touchUpInside" id="U8w-RK-3Aa"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="R6t-YN-qQa" firstAttribute="bottom" secondItem="lZi-Tx-qT5" secondAttribute="bottom" constant="352" id="JXv-Gi-PT1"/>
-                            <constraint firstItem="qFJ-BS-T38" firstAttribute="top" secondItem="R6t-YN-qQa" secondAttribute="top" constant="320" id="LYq-f6-T8s"/>
-                            <constraint firstItem="lZi-Tx-qT5" firstAttribute="top" secondItem="R6t-YN-qQa" secondAttribute="top" constant="297" id="QpK-4r-Xx8"/>
-                            <constraint firstItem="R6t-YN-qQa" firstAttribute="trailing" secondItem="pQM-Xh-9Ha" secondAttribute="trailing" constant="56" id="Spy-Uu-DPH"/>
-                            <constraint firstItem="R6t-YN-qQa" firstAttribute="bottom" secondItem="pQM-Xh-9Ha" secondAttribute="bottom" constant="397" id="TXc-PX-o4r"/>
-                            <constraint firstItem="qFJ-BS-T38" firstAttribute="centerY" secondItem="lZi-Tx-qT5" secondAttribute="centerY" id="VHG-76-wmD"/>
-                            <constraint firstItem="pQM-Xh-9Ha" firstAttribute="leading" secondItem="R6t-YN-qQa" secondAttribute="leading" constant="45" id="Y2d-S6-JPD"/>
-                            <constraint firstItem="lZi-Tx-qT5" firstAttribute="leading" secondItem="R6t-YN-qQa" secondAttribute="leading" constant="50" id="f03-Mh-cqz"/>
-                            <constraint firstItem="R6t-YN-qQa" firstAttribute="trailing" secondItem="qFJ-BS-T38" secondAttribute="trailing" constant="43" id="sPK-0R-oVH"/>
-                            <constraint firstItem="pQM-Xh-9Ha" firstAttribute="top" secondItem="aEE-sR-7IC" secondAttribute="bottom" constant="8" id="tuC-d3-kUe"/>
-                            <constraint firstItem="pQM-Xh-9Ha" firstAttribute="centerX" secondItem="aEE-sR-7IC" secondAttribute="centerX" id="yDu-0e-wfy"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="R6t-YN-qQa"/>
                     </view>
                     <navigationItem key="navigationItem" id="b00-2Z-4c6"/>
@@ -489,7 +467,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.57992632769999997" green="0.39572358499999999" blue="0.14211432190000001" alpha="0.75277838909999994" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="61K-HW-Hi1" firstAttribute="trailing" secondItem="KPm-eb-Fsn" secondAttribute="trailingMargin" id="A5I-43-KQz"/>
@@ -523,7 +501,7 @@
     <resources>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="folder" catalog="system" width="128" height="95"/>
-        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="location.fill" catalog="system" width="128" height="115"/>
         <image name="mic.circle" catalog="system" width="128" height="121"/>
         <image name="mic.circle.fill" catalog="system" width="128" height="121"/>
         <image name="mick" width="966" height="966"/>
