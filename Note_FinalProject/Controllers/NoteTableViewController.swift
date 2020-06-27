@@ -45,8 +45,8 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
     }
     
     @IBAction func btnSort(_ sender: UIBarButtonItem) {
-        sortByTitle()
-        tableView.reloadData()
+       sortByTitle()
+       tableView.reloadData()
     }
     func updateSearchResults(for searchController: UISearchController) {
         searchController.searchBar.autocapitalizationType = .none
@@ -63,19 +63,24 @@ class NoteTableViewController: UITableViewController,UISearchResultsUpdating,UIS
     
     
     
-    func sortByTitle() {
-        let fetchRequest:NSFetchRequest<Notes> = Notes.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-        
-        do {
-            self.notes = try context.fetch(fetchRequest)
-        }
-        catch{
-            print(error)
-            dismiss(animated: true, completion: nil)
-        }
-        
-    }
+    func sortByTitle(with request: NSFetchRequest<Notes> = Notes.fetchRequest(), predicate: NSPredicate? = nil) {
+                 
+                          let folderPredicate = NSPredicate(format: "folder.name=%@", selectedFolder!.name!)
+                          request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+                          if let addtionalPredicate = predicate {
+                              request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [folderPredicate, addtionalPredicate])
+                          } else {
+                              request.predicate = folderPredicate
+                          }
+                          
+                          do {
+                              notes = try context.fetch(request)
+                          } catch {
+                              print("Error loading notes \(error.localizedDescription)")
+                          }
+                          
+                          tableView.reloadData()
+                      }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
     {
         let serachDta = notes.filter { $0.title!.lowercased().contains(searchText.lowercased()) || $0.desc!.lowercased().contains(searchText.lowercased())}
