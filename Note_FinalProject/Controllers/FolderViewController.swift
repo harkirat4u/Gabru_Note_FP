@@ -119,6 +119,20 @@ class FolderViewController: UITableViewController {
            
            present(alert, animated: true, completion: nil)
        }
+     
+     //Delete Fuction
+       
+         func deleteNote(folder: Folder) {
+               context.delete(folder)
+           }
+              func saveNotes() {
+                  do {
+                      try context.save()
+                  } catch {
+                      print("Error saving the context \(error.localizedDescription)")
+                  }
+         }
+         
        // Alert Box
       func showAlert() {
           let alert = UIAlertController(title: "Name Taken", message: "Please choose another name", preferredStyle: .alert)
