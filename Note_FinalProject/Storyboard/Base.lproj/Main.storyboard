@@ -300,7 +300,7 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="S1w-ud-eWc"/>
                         <barButtonItem title="Update" id="fPW-Eg-sFG">
                             <connections>
-                                <action selector="updateAction:" destination="uGb-zx-MFN" id="dfg-0C-YyQ"/>
+                                <action selector="updateAction:" destination="uGb-zx-MFN" id="u1U-6l-F15"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="9zu-xN-Thu"/>
@@ -332,7 +332,8 @@
                         <outlet property="saveBtn" destination="pwa-XJ-gEt" id="ikz-Pu-KYa"/>
                         <outlet property="txtDesc" destination="xAt-a6-fmL" id="PLH-Mv-5FU"/>
                         <outlet property="txttitle" destination="atp-v9-gXZ" id="FBO-4l-riT"/>
-                        <outlet property="updateBtn" destination="fPW-Eg-sFG" id="ncI-sZ-iU3"/>
+                        <outlet property="updateAction" destination="fPW-Eg-sFG" id="Ygb-kJ-4XU"/>
+                        <outlet property="updateBtn" destination="fPW-Eg-sFG" id="uFQ-px-mdD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRi-Zf-Fsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

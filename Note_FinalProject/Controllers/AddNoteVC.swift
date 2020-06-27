@@ -16,6 +16,7 @@ import AVFoundation
 class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerControllerDelegate ,UINavigationControllerDelegate, AVAudioRecorderDelegate{
     var selectedNote: Notes?
       weak var delegate: NoteTableViewController?
+    @IBOutlet weak var updateBtn: UIBarButtonItem!
     @IBOutlet var txttitle: UITextField!
     @IBOutlet var txtDesc: UITextView!
     @IBOutlet var locationitem: UIBarButtonItem!
@@ -83,6 +84,12 @@ class AddNoteVC: UIViewController, CLLocationManagerDelegate,UIImagePickerContro
         })
         present(ac, animated: true)
     }
+    
+    
+    @IBAction func updateAction(_ sender: UIBarButtonItem) {
+    }
+    
+    
     
     @IBAction func btnSave(_ sender: Any) {
         determineMyCurrentLocation()
