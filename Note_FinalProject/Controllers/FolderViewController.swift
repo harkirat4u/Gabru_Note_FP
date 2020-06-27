@@ -69,6 +69,10 @@ class FolderViewController: UITableViewController {
     
     
     @IBAction func editActionBtn(_ sender: UIBarButtonItem) {
+         editMode = !editMode
+                         
+                         tableView.setEditing(editMode ? true : false, animated: true)
+              deleteBtn.isEnabled = !deleteBtn.isEnabled
     }
     
     
